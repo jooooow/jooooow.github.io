@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>jox5w</title>
+  
+  
+  <link href="https://jooooow.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://jooooow.github.io/"/>
+  <updated>2022-07-28T14:56:09.108Z</updated>
+  <id>https://jooooow.github.io/</id>
+  
+  <author>
+    <name>John Doe</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>test2</title>
+    <link href="https://jooooow.github.io/2022/07/28/test2/"/>
+    <id>https://jooooow.github.io/2022/07/28/test2/</id>
+    <published>2022-07-28T14:55:43.000Z</published>
+    <updated>2022-07-28T14:56:09.108Z</updated>
+    
+    <content type="html"><![CDATA[<p>ahahah</p>]]></content>
+    
+    
+    <summary type="html">TEST2</summary>
+    
+    
+    
+    <category term="other2" scheme="https://jooooow.github.io/categories/other2/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>test</title>
+    <link href="https://jooooow.github.io/2022/07/28/test/"/>
+    <id>https://jooooow.github.io/2022/07/28/test/</id>
+    <published>2022-07-28T14:40:21.000Z</published>
+    <updated>2022-07-28T14:54:18.225Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="This-is-a-test-blog"><a href="#This-is-a-test-blog" class="headerlink" title="This is a test blog."></a>This is a test blog.</h2><p>hahahahahahahah</p><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">cout&lt;&lt;<span class="string">&quot;hello world!&quot;</span>&lt;&lt;endl;</span><br><span class="line"><span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+    <summary type="html">TEST</summary>
+    
+    
+    
+    <category term="other" scheme="https://jooooow.github.io/categories/other/"/>
+    
+    
+  </entry>
+  
+</feed>
