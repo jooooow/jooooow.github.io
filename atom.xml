@@ -6,7 +6,7 @@
   <link href="https://jooooow.github.io/atom.xml" rel="self"/>
   
   <link href="https://jooooow.github.io/"/>
-  <updated>2022-07-28T15:36:36.095Z</updated>
+  <updated>2022-07-28T15:38:02.404Z</updated>
   <id>https://jooooow.github.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>simd</title>
+    <title>SIMD</title>
     <link href="https://jooooow.github.io/2022/07/29/simd/"/>
     <id>https://jooooow.github.io/2022/07/29/simd/</id>
     <published>2022-07-28T15:36:07.000Z</published>
-    <updated>2022-07-28T15:36:36.095Z</updated>
+    <updated>2022-07-28T15:38:02.404Z</updated>
     
     
     <summary type="html">SIMD instructions of CUDA</summary>
