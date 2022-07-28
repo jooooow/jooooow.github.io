@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>jox5w</title>
+  
+  
+  <link href="https://jooooow.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://jooooow.github.io/"/>
+  <updated>2022-07-28T15:36:36.095Z</updated>
+  <id>https://jooooow.github.io/</id>
+  
+  <author>
+    <name>John Doe</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>simd</title>
+    <link href="https://jooooow.github.io/2022/07/29/simd/"/>
+    <id>https://jooooow.github.io/2022/07/29/simd/</id>
+    <published>2022-07-28T15:36:07.000Z</published>
+    <updated>2022-07-28T15:36:36.095Z</updated>
+    
+    
+    <summary type="html">SIMD instructions of CUDA</summary>
+    
+    
+    
+    
+    <category term="CUDA" scheme="https://jooooow.github.io/tags/CUDA/"/>
+    
+  </entry>
+  
+</feed>
