@@ -119,6 +119,6 @@ $$
 
 
 #### 参考资料
-+ [https://math.libretexts.org/Bookshelves/Differential_Equations/Introduction_to_Partial_Differential_Equations_(Herman)/06%3A_Problems_in_Higher_Dimensions/6.05%3A_Laplaces_Equation_and_Spherical_Symmetry](https://math.libretexts.org/Bookshelves/Differential_Equations/Introduction_to_Partial_Differential_Equations_(Herman)/06%3A_Problems_in_Higher_Dimensions/6.05%3A_Laplaces_Equation_and_Spherical_Symmetry)
++ [https://math.libretexts.org/Bookshelves/Differential_Equations/..](https://math.libretexts.org/Bookshelves/Differential_Equations/Introduction_to_Partial_Differential_Equations_(Herman)/06%3A_Problems_in_Higher_Dimensions/6.05%3A_Laplaces_Equation_and_Spherical_Symmetry)
 + [https://zhuanlan.zhihu.com/p/153352797](https://zhuanlan.zhihu.com/p/153352797)
 + [https://www.physics.uoguelph.ca/chapter-4-spherical-harmonics](https://www.physics.uoguelph.ca/chapter-4-spherical-harmonics)
