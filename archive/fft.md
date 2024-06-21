@@ -3,6 +3,13 @@ title: "FFT原理及实装"
 ---
 
 <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" id="MathJax-script"></script>
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'],['\\(', '\\)']]
+  }
+};
+</script>
 
 
 
