@@ -1,3 +1,7 @@
+---
+title: "FFT and simple implementation"
+---
+
 <script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax:{inlineMath:[['\$','\$'],['\\(','\\)']],processEscapes:true},CommonHTML: {matchFontHeight:false}});</script>
 <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 
@@ -47,14 +51,20 @@ Y_N(k+\frac{N}{2})=E_{\frac{N}{2}}(k)-W_{N}^{k}O_{\frac{N}{2}}(k)\tag{5}
 公式(4)(5)说明，假设\(N=8\)，当使用\(E_0～E_3,O_0～O_3\)计算出\(Y_0～Y_3\)之后，可以复用这几个\(E,O\)来计算\(Y_4～Y_7\)而不用重新计算\(E_4～E_7,O_4～O_7\)。 </p>
 <p>   
 综上，只要分别计算出两个\(\frac{N}{2}\)长度的DFT，就可以通过公式(4)(5)确定\(N\)长度的DFT了，当\(N=8\)时可以画出如下的图：
-<img src="/static/img/fft1.svg" width=300></img>
+
+<img src="../img/fft/fft1.svg" width=300></img>
+
 进一步，每个\(N=4\)的DFT又各自可以拆分成两个\(N=2\)的DFT：
-<img src="/static/img/fft2.svg" width=300></img>
+
+<img src="../img/fft/fft2.svg" width=300></img>
+
 每个\(N=2\)的DFT又各自可以拆分成两个\(N=1\)的DFT：
-<img src="/static/img/fft3.svg" width=300></img>
+<img src="../img/fft/fft3.svg" width=300></img>
+
 对于\(N=2^n\)的情况，总共被分为\(log_2{N}\)层，每层进行\(N\)次加法乘法，因此总体的复杂度为\(O(Nlog{N})\)。
 </p>
 对应的代码如下：
+
 ```C++
 #include <math.h>
 #include <complex>
@@ -127,13 +137,16 @@ int main(int argc, char* argv[])
     return 0;
 }
 ```
-[github](https://github.com/jooooow/fft)
+[code](https://github.com/jooooow/fft)
 
 ### n维FFT
+
 可以分解成n个1维的FFT，在每个的维度上进行1d-FFT。
 考虑3d-FFT，需要分别在x,y,z轴上进行1d-FFT。
 对于distributed memory类型的并行系统，为了保证数据的局部性，需要将当前维度的数据存储在结点内部。因此，当切换到另一个轴上计算之前，需要对矩阵进行转置：
-<img src="/static/img/transpose.svg" width=500></img>
+
+<img src="../img/fft/transpose.svg" width=500></img>
+
 然而这样的转置需要all-to-all的通信，继而当结点数增加到一定值时会产生通信的瓶颈。对于这个问题有一些trick可以缓解：
 
 1. FFTW, [http://www.fftw.org/parallel/parallel-fftw.html](http://www.fftw.org/parallel/parallel-fftw.html)
