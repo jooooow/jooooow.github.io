@@ -9,6 +9,7 @@ title: jooooow
 
 # Blogs
 
++ <a href="/archive/cmake_tutorial.html">about the usage of .gitignore</a>
 + <a href="/archive/about_gitignore.html">about the usage of .gitignore</a>
 
 # Contact
