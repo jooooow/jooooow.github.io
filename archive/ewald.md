@@ -11,7 +11,7 @@ MathJax = {
 };
 </script>
 
-Ewald Summation法常被用来计算存在多个点电荷的电场，最终的结果可以直接看[公式16,17](http://www.jooooow.com/article/38#summary)。
+Ewald Summation法常被用来计算存在多个点电荷的电场，最终的结果可以直接看[公式16,17](#summary)。
 
 首先定义三维空间中一点的坐标$\vec{z}$为：
 
@@ -156,15 +156,19 @@ $$
 \Phi^l(\vec{z}) = \frac{1}{L^3} \sum_{\vec{w} \ne 0} \tilde{\Phi}^l(\vec{w}) e^{i \vec{w} \cdot \vec{z}} \tag{15}
 $$
 
-最后总结一下：
 
-<a name="summary">
+最后总结一下：
+<a name="summary"></a>
+
+$$
 \begin{align}
 &\Phi_{[i]} = \Phi_{[i]}^{s}+\Phi_{}^{l} - \Phi_{i}^{self} \tag{16}\\ 
 &\Phi_{[i]}^{s} = \sum_{n=-\infty}^{\infty} \sum_{j=1(\ne i)}^{N} q_j \frac{erfc(\alpha |\vec{z}-\vec{z}_j+nL|)}{4  \pi \epsilon_0 |\vec{z}-\vec{z}_j+nL|} \\
 &\Phi_{}^{l} = IDFT(Green(DFT(\rho^l))) \\
 &\Phi_{i}^{self} = \frac{\alpha q_j}{2 \pi ^ {\frac{3}{2}} \epsilon_0}
 \end{align} 
+$$
+
 得到电势之后力的计算就很简单了，分别对每个部分求空间一阶导再乘上$-q_i$即可：
 
 $$
