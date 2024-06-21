@@ -1,3 +1,7 @@
+---
+title: "about gitignore"
+---
+
 # 简介
 
 在使用git时有时我们希望忽略一些文件不追踪/不上传到远程库，此时可以使用.gitignore。
