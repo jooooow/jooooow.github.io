@@ -40,8 +40,8 @@ $$
 Ewald的核心在于通过假想的高斯分布将3式分解成两部分，即：
 
 $$\begin{align}
-\rho_j(\vec{z})&=&q_j \delta (\vec{z}-\vec{z}_j)\\
-&=&\underbrace{q_j (\delta (\vec{z}-\vec{z}_j)-G(\vec{z}-\vec{z}_j))}_{\rho_j^s(\vec{z})}+\underbrace{q_j G(\vec{z}-\vec{z}_j)}_{\rho_j^l(\vec{z})}
+\rho_j(\vec{z})&=q_j \delta (\vec{z}-\vec{z}_j)\\
+&=\underbrace{q_j (\delta (\vec{z}-\vec{z}_j)-G(\vec{z}-\vec{z}_j))}_{\rho_j^s(\vec{z})}+\underbrace{q_j G(\vec{z}-\vec{z}_j)}_{\rho_j^l(\vec{z})}
  \tag{4}
 \end{align}$$
 
@@ -62,21 +62,21 @@ $$
 将5式带入泊松方程可得：
 
 $$\begin{align}
-\Delta \Phi(\vec{z}) &=& -\frac{G(\vec{z})}{\epsilon_0} \\
-\frac{1}{r} \frac{\partial^2}{\partial r^2}(r\Phi(\vec{z}) ) &=& -\frac{\alpha ^ 3}{\pi ^ {\frac{3}{2}} \epsilon_0} e^{-\alpha^2 r^2} \\
-\frac{\partial^2}{\partial r^2}(r\Phi(\vec{z}) ) &=& -\frac{\alpha ^ 3}{\pi ^ {\frac{3}{2}} \epsilon_0} re^{-\alpha^2 r^2} \\
-\frac{\partial}{\partial r}(r\Phi(\vec{z}) ) &=& \frac{\alpha}{2 \pi ^ {\frac{3}{2}} \epsilon_0} e^{-\alpha^2 r^2} + C_1 \\
-r\Phi(\vec{z}) &=& \frac{\alpha}{2 \pi ^ {\frac{3}{2}} \epsilon_0} \int_{0}^{r} e^{-\alpha^2 r^2} dr + C_1 r + C_2 \\
-\Phi(\vec{z}) &=& \frac{\alpha}{2 \pi ^ {\frac{3}{2}} \epsilon_0 r} \int_{0}^{r} e^{-\alpha^2 r^2} dr + C_1 + \frac{C_2}{r} \\
- &=& \frac{1}{2  \pi ^ {\frac{3}{2}} \epsilon_0 r} \int_{0}^{r} e^{-\alpha^2 r^2} d(\alpha r) + C_1 + \frac{C_2}{r} \\
- &=& \frac{erf(\alpha r)}{4  \pi \epsilon_0 r}  + C_1 + \frac{C_2}{r} \\
+\Delta \Phi(\vec{z}) &= -\frac{G(\vec{z})}{\epsilon_0} \\
+\frac{1}{r} \frac{\partial^2}{\partial r^2}(r\Phi(\vec{z}) ) &= -\frac{\alpha ^ 3}{\pi ^ {\frac{3}{2}} \epsilon_0} e^{-\alpha^2 r^2} \\
+\frac{\partial^2}{\partial r^2}(r\Phi(\vec{z}) ) &= -\frac{\alpha ^ 3}{\pi ^ {\frac{3}{2}} \epsilon_0} re^{-\alpha^2 r^2} \\
+\frac{\partial}{\partial r}(r\Phi(\vec{z}) ) &= \frac{\alpha}{2 \pi ^ {\frac{3}{2}} \epsilon_0} e^{-\alpha^2 r^2} + C_1 \\
+r\Phi(\vec{z}) &= \frac{\alpha}{2 \pi ^ {\frac{3}{2}} \epsilon_0} \int_{0}^{r} e^{-\alpha^2 r^2} dr + C_1 r + C_2 \\
+\Phi(\vec{z}) &= \frac{\alpha}{2 \pi ^ {\frac{3}{2}} \epsilon_0 r} \int_{0}^{r} e^{-\alpha^2 r^2} dr + C_1 + \frac{C_2}{r} \\
+ &= \frac{1}{2  \pi ^ {\frac{3}{2}} \epsilon_0 r} \int_{0}^{r} e^{-\alpha^2 r^2} d(\alpha r) + C_1 + \frac{C_2}{r} \\
+ &= \frac{erf(\alpha r)}{4  \pi \epsilon_0 r}  + C_1 + \frac{C_2}{r} \\
 \end{align}$$
 
 当$r \to \infty$时：
 
 $$\begin{align}
-\lim_{r \to \infty} erf(r) &=& 1\\
-\lim_{r \to \infty} \Phi(r) &=& q_j \frac{1}{4  \pi \epsilon_0 r} (库仑定律)
+\lim_{r \to \infty} erf(r) &= 1\\
+\lim_{r \to \infty} \Phi(r) &= q_j \frac{1}{4  \pi \epsilon_0 r} (库仑定律)
 \end{align}$$
 
 可得$C_1=C_2=0$。因此$\rho_j^l(\vec{z})$产生的长程电势$\Phi_j^l(\vec{z})$为：
@@ -95,31 +95,31 @@ $erf$和$erfc$分别为误差函数和互补误差函数。
 基于公式7和8，公式2中的$\Phi_{[i]}$可以改写为两个部分的电势的和：
 
 $$\begin{align}
-\Phi_{[i]} &=& \Phi_{[i]}^{s}+\Phi_{[i]}^{l}\\
-&=& \sum_{n=-\infty}^{\infty} \sum_{j=1}^{N} \Phi_j^s(\vec{z}) + \sum_{n=-\infty}^{\infty} \sum_{j=1}^{N} \Phi_j^l(\vec{z})\\
-&=& \sum_{n=-\infty}^{\infty} \sum_{j=1(\ne i)}^{N} q_j \frac{erfc(\alpha |\vec{z}-\vec{z}_j+nL|)}{4  \pi \epsilon_0 |\vec{z}-\vec{z}_j+nL|} + \sum_{n=-\infty}^{\infty} \sum_{j=1(\ne i)}^{N} q_j \frac{erf(\alpha |\vec{z}-\vec{z}_j+nL|)}{4  \pi \epsilon_0 |\vec{z}-\vec{z}_j+nL|} \tag{9}
+\Phi_{[i]} &= \Phi_{[i]}^{s}+\Phi_{[i]}^{l}\\
+&= \sum_{n=-\infty}^{\infty} \sum_{j=1}^{N} \Phi_j^s(\vec{z}) + \sum_{n=-\infty}^{\infty} \sum_{j=1}^{N} \Phi_j^l(\vec{z})\\
+&= \sum_{n=-\infty}^{\infty} \sum_{j=1(\ne i)}^{N} q_j \frac{erfc(\alpha |\vec{z}-\vec{z}_j+nL|)}{4  \pi \epsilon_0 |\vec{z}-\vec{z}_j+nL|} + \sum_{n=-\infty}^{\infty} \sum_{j=1(\ne i)}^{N} q_j \frac{erf(\alpha |\vec{z}-\vec{z}_j+nL|)}{4  \pi \epsilon_0 |\vec{z}-\vec{z}_j+nL|} \tag{9}
 \end{align}$$
 
 由于$\Phi_{[i]}^{s}$在实空间中快速衰减因此在cutoff内直接计算，而$\Phi_{[i]}^{l}$仅在倒空间中快速衰减因此使用傅里叶变换计算。然而由于傅里叶变换时对整体进行变换无法单独忽略某点电荷，因此计算出的电势中会包含电荷和自己的相互作用，这个自相互作用产生的电势$\Phi_{i}^{self}$需要减掉。因此，实际计算时公式9变形为：
 
 $$\begin{align}
-\Phi_{[i]} &=& \Phi_{[i]}^{s}+\Phi_{}^{l} - \Phi_{i}^{self}\\
-&=& \sum_{n=-\infty}^{\infty} \sum_{j=1(\ne i)}^{N} q_j \frac{erfc(\alpha |\vec{z}-\vec{z}_j+nL|)}{4  \pi \epsilon_0 |\vec{z}-\vec{z}_j+nL|} + \sum_{n=-\infty}^{\infty} \sum_{j=1}^{N} q_j \frac{erf(\alpha |\vec{z}-\vec{z}_j+nL|)}{4  \pi \epsilon_0 |\vec{z}-\vec{z}_j+nL|}  - \Phi_{i}^{self} \tag{10}
+\Phi_{[i]} &= \Phi_{[i]}^{s}+\Phi_{}^{l} - \Phi_{i}^{self}\\
+&= \sum_{n=-\infty}^{\infty} \sum_{j=1(\ne i)}^{N} q_j \frac{erfc(\alpha |\vec{z}-\vec{z}_j+nL|)}{4  \pi \epsilon_0 |\vec{z}-\vec{z}_j+nL|} + \sum_{n=-\infty}^{\infty} \sum_{j=1}^{N} q_j \frac{erf(\alpha |\vec{z}-\vec{z}_j+nL|)}{4  \pi \epsilon_0 |\vec{z}-\vec{z}_j+nL|}  - \Phi_{i}^{self} \tag{10}
 \end{align}$$
 
 注意公式10中的长程电势中已经不包含$j \ne i$，因此可以被转化到傅里叶空间。
 
 对于自相互作用产生的电势，可以通过将$\Phi_{}^{l}(r)$的$r$趋于$0$得到：
 $$\begin{align}
-\Phi_{i}^{self} &=& \lim_{r \to 0} q_j \frac{erf(\alpha r)}{4 \pi \epsilon_0 r}\\
-&=& \frac{q_j}{4 \pi \epsilon_0} \lim_{r \to 0} \frac{erf(\alpha r)}{r}\\
-&=& \frac{q_j}{4 \pi \epsilon_0} \lim_{x \to 0} \frac{2 \alpha}{\sqrt{\pi}} e^{-x^2} (换元+洛必达)\\
-&=& \frac{\alpha q_j}{2 \pi ^ {\frac{3}{2}} \epsilon_0}  \tag{11}
+\Phi_{i}^{self} &= \lim_{r \to 0} q_j \frac{erf(\alpha r)}{4 \pi \epsilon_0 r}\\
+&= \frac{q_j}{4 \pi \epsilon_0} \lim_{r \to 0} \frac{erf(\alpha r)}{r}\\
+&= \frac{q_j}{4 \pi \epsilon_0} \lim_{x \to 0} \frac{2 \alpha}{\sqrt{\pi}} e^{-x^2} (换元+洛必达)\\
+&= \frac{\alpha q_j}{2 \pi ^ {\frac{3}{2}} \epsilon_0}  \tag{11}
 \end{align}$$
 现在只剩下长程电势$\Phi_{}^{l}$了，需要在傅里叶空间中计算。这里先明确下使用的傅里叶级数的正/反变换分别定义为：
 $$\begin{align}
-F(k)&=&\int f(x) e^{-ikx} dx\\
-f(x)&=&\frac{1}{L} \sum F(k) e^{ikx} dk 
+F(k)&=\int f(x) e^{-ikx} dx\\
+f(x)&=\frac{1}{L} \sum F(k) e^{ikx} dk 
 \end{align}$$
 公式4中定义$j$产生的长程电荷密度为：
 
@@ -136,10 +136,10 @@ $$
 对其进行变换到频域：
 
 $$\begin{align}
-\tilde{\rho}^l(\vec{w}) &=& \int \sum_{n=-\infty}^{\infty} \sum_{j=1}^{N} q_j G(\vec{z}-\vec{z}_j + nL) e^{-i\vec{w}\cdot \vec{z}} d\vec{z}\\
-&=& \sum_{j=1}^{N} q_j  \int_{R^3}   G(\vec{z}-\vec{z}_j) e^{-i\vec{w} \cdot \vec{z}} d\vec{z}\\
-&=& \frac{\alpha^3}{\pi^{\frac{3}{2}}} \sum_{j=1}^{N} q_j  \int_{R^3}   e^{-\alpha^2 |\vec{z}-\vec{z}_j|^2} e^{-i\vec{w} \cdot \vec{z}_j} d\vec{z}\\
-&=& e^{-\frac{|\vec{w}|^2}{4 \alpha ^ 2}} \sum_{j=1}^{N} q_j e^{-i\vec{w} \cdot \vec{z}_j} \tag{13}
+\tilde{\rho}^l(\vec{w}) &= \int \sum_{n=-\infty}^{\infty} \sum_{j=1}^{N} q_j G(\vec{z}-\vec{z}_j + nL) e^{-i\vec{w}\cdot \vec{z}} d\vec{z}\\
+&= \sum_{j=1}^{N} q_j  \int_{R^3}   G(\vec{z}-\vec{z}_j) e^{-i\vec{w} \cdot \vec{z}} d\vec{z}\\
+&= \frac{\alpha^3}{\pi^{\frac{3}{2}}} \sum_{j=1}^{N} q_j  \int_{R^3}   e^{-\alpha^2 |\vec{z}-\vec{z}_j|^2} e^{-i\vec{w} \cdot \vec{z}_j} d\vec{z}\\
+&= e^{-\frac{|\vec{w}|^2}{4 \alpha ^ 2}} \sum_{j=1}^{N} q_j e^{-i\vec{w} \cdot \vec{z}_j} \tag{13}
 \end{align}$$
 
 公式13表明只需要对全体点电荷做一个离散傅里叶变换再乘以一个系数就可以得到长程电荷分布的频域函数。
