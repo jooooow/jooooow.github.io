@@ -25,7 +25,7 @@ title: "关于gitignore的用法"
 # 例子
 假设存在以下目录结构：
 
-```
+```bash
 ├── .git
 ├── .gitignore
 ├── README.md
