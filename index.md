@@ -9,6 +9,7 @@ title: jooooow
 
 # Articles
 
++ <a href="/archive/ewald.html">ewald summation</a>
 + <a href="/archive/fmm_spherical.html">spherical harmonic in FMM</a>
 + <a href="/archive/fft.html">FFT</a>
 + <a href="/archive/groamcs_startup.html">gromacs startup</a>
