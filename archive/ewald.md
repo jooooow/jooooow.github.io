@@ -110,17 +110,25 @@ $$\begin{align}
 注意公式10中的长程电势中已经不包含$j \ne i$，因此可以被转化到傅里叶空间。
 
 对于自相互作用产生的电势，可以通过将$\Phi_{}^{l}(r)$的$r$趋于$0$得到：
-$$\begin{align}
+
+$$
+\begin{align}
 \Phi_{i}^{self} &= \lim_{r \to 0} q_j \frac{erf(\alpha r)}{4 \pi \epsilon_0 r}\\
 &= \frac{q_j}{4 \pi \epsilon_0} \lim_{r \to 0} \frac{erf(\alpha r)}{r}\\
 &= \frac{q_j}{4 \pi \epsilon_0} \lim_{x \to 0} \frac{2 \alpha}{\sqrt{\pi}} e^{-x^2} (换元+洛必达)\\
 &= \frac{\alpha q_j}{2 \pi ^ {\frac{3}{2}} \epsilon_0}  \tag{11}
-\end{align}$$
+\end{align}
+$$
+
 现在只剩下长程电势$\Phi_{}^{l}$了，需要在傅里叶空间中计算。这里先明确下使用的傅里叶级数的正/反变换分别定义为：
-$$\begin{align}
+
+$$
+\begin{align}
 F(k)&=\int f(x) e^{-ikx} dx\\
 f(x)&=\frac{1}{L} \sum F(k) e^{ikx} dk 
-\end{align}$$
+\end{align}
+$$
+
 公式4中定义$j$产生的长程电荷密度为：
 
 $$
