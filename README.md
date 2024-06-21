@@ -1,2 +1,2 @@
 my website
-/archive/test.html
+<a href="/archive/test.html">Page 2</a>
