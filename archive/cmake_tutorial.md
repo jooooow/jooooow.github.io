@@ -1,3 +1,7 @@
+---
+title: "CMake备忘录"
+---
+
 参考自官方教程
 [https://cmake.org/cmake/help/latest/guide/tutorial/index.html](https://cmake.org/cmake/help/latest/guide/tutorial/index.html).   
 基于cmake 3.26.3
