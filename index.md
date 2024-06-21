@@ -7,7 +7,7 @@ title: jooooow
 
 @titech
 
-# Blogs
+# Articles
 
 + <a href="/archive/fft.html">FFT</a>
 + <a href="/archive/groamcs_startup.html">gromacs startup</a>
