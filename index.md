@@ -9,7 +9,7 @@ title: jooooow
 
 # Blogs
 
-+ <a href="/archive/groamcs_startup.md">gromacs startup</a>
++ <a href="/archive/groamcs_startup.html">gromacs startup</a>
 + <a href="/archive/cmake_tutorial.html">memo of CMake</a>
 + <a href="/archive/about_gitignore.html">about the usage of .gitignore</a>
 
