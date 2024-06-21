@@ -92,7 +92,7 @@ target_compile_feature(${PROJECT_NAME} PUBLIC cxx_std_20)
 <a name="marco"></a>
 ## 传递宏
 通过configure_file可以将CMakeLists.txt中定义的参数通过形如`@VAR@`的宏的形式传入源文件，其流程如下：
-![configure_file](../img/configure_file.png)  
+![configure_file](../img/cmake_tutorial/configure_file.png)  
 首先在工程目录中添加config.h.in：
 ```
 .
