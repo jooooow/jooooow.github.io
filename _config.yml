@@ -1,3 +1,5 @@
-theme: jekyll-theme-minimal
+theme: minima
 title: jooooow's blog
-description: Bookmark this to keep an eye on my project updates!
+
+footer_text:"Copyright(c) 2022 jooooow. All rights reserved."
+description: \^o^/
