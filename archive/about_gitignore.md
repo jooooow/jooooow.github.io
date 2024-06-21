@@ -46,27 +46,27 @@ title: "关于gitignore的用法"
 
 1. 忽略所有img目录  
 
-```img/```  
+`img/`
 
 2. 忽略server.py  
 
-```server.py```  
+`server.py`
 
 3. 忽略所有img下的1.png文件    
 
-```img/1.png```  
+`img/1.png`  
 
 4. 只忽略根目录下的img目录    
 
-```/img```  
+`/img`  
 
 5. 忽略/static/img下的所有文件除了1.png  
 
-```/static/img/*<br>!/static/img/1.png```  
+`/static/img/*<br>!/static/img/1.png`  
 
 6. 一度被add后的对象再修改.gitignore后不会生效，需要删除cache重新add  
 
-```
+```bash
 git add .
 git commit -m 'bug fixed'
 git push
