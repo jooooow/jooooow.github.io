@@ -2,8 +2,8 @@
 title: "FFT原理及实装"
 ---
 
-<script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax:{inlineMath:[['\$','\$'],['\$','\$']],processEscapes:true},CommonHTML: {matchFontHeight:false}});</script>
-<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" id="MathJax-script"></script>
+
 
 
 ### 一维FFT
@@ -15,9 +15,9 @@ title: "FFT原理及实装"
 
 IDFT公式为：
 
-\\[
+$$
  x(t)=\frac{1}{N}\sum_{k=0}^{N-1}  Y_N(k) e^{i\frac{2 \pi}{N}kt}
-\\]
+$$
 
 
 这里只说明DFT的快速算法，IDFT和DFT只相差一个负号所以方法一样适用。
@@ -29,14 +29,14 @@ IDFT公式为：
 
 使用公式(1)，我们可以将原始的DFT分解成仅包含偶数t和仅包含奇数t的两个部分的和：
 
-\\[
+$$
 \begin{align}
-Y_N(k)&=&\sum_{t=0}^{N-1}  x(t) W_{N}^{kt} \\
-&=&\sum_{t=0}^{\frac{N}{2}-1}  x(2t) W_{N}^{2kt} +\sum_{t=0}^{\frac{N}{2}-1}  x(2t+1) W_{N}^{k(2t+1)}\\ 
-&=&\sum_{t=0}^{\frac{N}{2}-1}  x(2t) W_{N}^{2kt} +W_{N}^{k}\sum_{t=0}^{\frac{N}{2}-1}  x(2t+1) W_{N}^{2kt} \\
-&=&\underbrace{\sum_{t=0}^{\frac{N}{2}-1}  x(2t) W_{\frac{N}{2}}^{kt}}_{E} +W_{N}^{k}\underbrace{\sum_{t=0}^{\frac{N}{2}-1}  x(2t+1) W_{\frac{N}{2}}^{kt}}_{O}
+Y_N(k)&=\sum_{t=0}^{N-1}  x(t) W_{N}^{kt} \\
+&=\sum_{t=0}^{\frac{N}{2}-1}  x(2t) W_{N}^{2kt} +\sum_{t=0}^{\frac{N}{2}-1}  x(2t+1) W_{N}^{k(2t+1)}\\ 
+&=\sum_{t=0}^{\frac{N}{2}-1}  x(2t) W_{N}^{2kt} +W_{N}^{k}\sum_{t=0}^{\frac{N}{2}-1}  x(2t+1) W_{N}^{2kt} \\
+&=\underbrace{\sum_{t=0}^{\frac{N}{2}-1}  x(2t) W_{\frac{N}{2}}^{kt}}_{E} +W_{N}^{k}\underbrace{\sum_{t=0}^{\frac{N}{2}-1}  x(2t+1) W_{\frac{N}{2}}^{kt}}_{O}
 \end{align} 
-\\]
+$$
 
 其中，$E$部分相当于把相当于$x(t)$的偶数部分抽出来组成的长度为$\frac{N}{2}$的DFT，$O$部分相当于奇数部分组成的长度为$\frac{N}{2}$的DFT。由此，原始DFT被拆分成了两个一半大小的DFT：
 \\[Y_N(k)=E_{\frac{N}{2}}(k)+W_{N}^{k}O_{\frac{N}{2}}(k)\tag{4}。\\]
