@@ -1,6 +1,5 @@
 ---
 layout: home
-title: "jooooow's blog"
 ---
 
 ![image](https://github.com/jooooow.png)
