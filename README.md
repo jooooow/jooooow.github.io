@@ -1,2 +1,2 @@
 + <a href="/archive/test.html">test</a>
-+ <a href="/archive/adout_gitignore.html">about gitignore</a>
++ <a href="/archive/about_gitignore.html">about gitignore</a>
