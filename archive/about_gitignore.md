@@ -1,5 +1,5 @@
 ---
-title: "about gitignore"
+title: "关于gitignore的用法"
 ---
 
 # 简介
