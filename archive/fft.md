@@ -1,5 +1,5 @@
 ---
-title: "FFT and simple implementation"
+title: "FFT原理及实装"
 ---
 
 <script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax:{inlineMath:[['\$','\$'],['\$','\$']],processEscapes:true},CommonHTML: {matchFontHeight:false}});</script>
@@ -29,12 +29,12 @@ IDFT公式为：
 
 使用公式(1)，我们可以将原始的DFT分解成仅包含偶数t和仅包含奇数t的两个部分的和：
 
-\begin{eqnarray}
+\begin{align}
 Y_N(k)&=&\sum_{t=0}^{N-1}  x(t) W_{N}^{kt} \\
 &=&\sum_{t=0}^{\frac{N}{2}-1}  x(2t) W_{N}^{2kt} +\sum_{t=0}^{\frac{N}{2}-1}  x(2t+1) W_{N}^{k(2t+1)}\\ 
 &=&\sum_{t=0}^{\frac{N}{2}-1}  x(2t) W_{N}^{2kt} +W_{N}^{k}\sum_{t=0}^{\frac{N}{2}-1}  x(2t+1) W_{N}^{2kt} \\
 &=&\underbrace{\sum_{t=0}^{\frac{N}{2}-1}  x(2t) W_{\frac{N}{2}}^{kt}}_{E} +W_{N}^{k}\underbrace{\sum_{t=0}^{\frac{N}{2}-1}  x(2t+1) W_{\frac{N}{2}}^{kt}}_{O}
-\end{eqnarray} 
+\end{align} 
 
 其中，$E$部分相当于把相当于$x(t)$的偶数部分抽出来组成的长度为$\frac{N}{2}$的DFT，$O$部分相当于奇数部分组成的长度为$\frac{N}{2}$的DFT。由此，原始DFT被拆分成了两个一半大小的DFT：
 \\[Y_N(k)=E_{\frac{N}{2}}(k)+W_{N}^{k}O_{\frac{N}{2}}(k)\tag{4}。\\]
