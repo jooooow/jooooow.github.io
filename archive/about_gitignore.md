@@ -23,7 +23,7 @@ title: "关于gitignore的用法"
 ```开头无斜杠则默认递归匹配```
 
 # 例子
-假设存在以下目录结构：
+假设存在以下目录结构：  
 
 ```bash
 ├── .git
@@ -44,22 +44,27 @@ title: "关于gitignore的用法"
     └── index.html
 ```
 
-1. 忽略所有img目录
-```img/```
+1. 忽略所有img目录  
 
-2. 忽略server.py
-```server.py```
+```img/```  
 
-3. 忽略所有img下的1.png文件
-```img/1.png```
+2. 忽略server.py  
 
-4. 只忽略根目录下的img目录
-```/img```
+```server.py```  
 
-5. 忽略/static/img下的所有文件除了1.png
-```/static/img/*<br>!/static/img/1.png```
+3. 忽略所有img下的1.png文件    
 
-6. 一度被add后的对象再修改.gitignore后不会生效，需要删除cache重新add
+```img/1.png```  
+
+4. 只忽略根目录下的img目录    
+
+```/img```  
+
+5. 忽略/static/img下的所有文件除了1.png  
+
+```/static/img/*<br>!/static/img/1.png```  
+
+6. 一度被add后的对象再修改.gitignore后不会生效，需要删除cache重新add  
 
 ```
 git add .
