@@ -15,7 +15,9 @@ title: "FFT and simple implementation"
 
 IDFT公式为：
 
-\[ x(t)=\frac{1}{N}\sum_{k=0}^{N-1}  Y_N(k) e^{i\frac{2 \pi}{N}kt}\]
+```math
+ x(t)=\frac{1}{N}\sum_{k=0}^{N-1}  Y_N(k) e^{i\frac{2 \pi}{N}kt}
+```
 
 
 这里只说明DFT的快速算法，IDFT和DFT只相差一个负号所以方法一样适用。
