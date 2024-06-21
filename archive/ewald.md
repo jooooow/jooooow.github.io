@@ -184,7 +184,7 @@ F_i = -q_i \nabla \Phi_{[i]} \tag{17}
 $$
 
 
-Particle Mesh Ewald(PME)和Ewald Summation的不同就是PME将电荷插值到网格上，之后对网格[FFT](http://www.jooooow.com/article/36)来计算电势/力。
+Particle Mesh Ewald(PME)和Ewald Summation的不同就是PME将电荷插值到网格上，之后对网格[FFT](https://jooooow.github.io/archive/fft.html)来计算电势/力。
 
 #### 参考资料
 
