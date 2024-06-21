@@ -5,5 +5,11 @@ title: jooooow
 
 ![image](https://github.com/jooooow.png)
 
-+ <a href="/archive/test.html">test</a>
-+ <a href="/archive/about_gitignore.html">about gitignore</a>
+# Blogs
+
++ <a href="/archive/about_gitignore.html">about the usage of .gitignore</a>
+
+# Contact
+
++ GitHub : <a href="https://github.com/jooooow">jooooow</a>
++ X(old twitter) : <a href="https://x.com/jerksnapcrackle">jerksnapcrackle</a>
