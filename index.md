@@ -1,5 +1,6 @@
 ---
 layout: home
+title: jooooow
 ---
 
 ![image](https://github.com/jooooow.png)
