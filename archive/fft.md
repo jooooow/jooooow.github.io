@@ -8,7 +8,7 @@ title: "FFT and simple implementation"
 
 ### 一维FFT
 
-<b>核心原理</b>：通过\( e^{-i\frac{2 \pi}{N}kt} \)的对称性将DFT递归分解成若干小的DFT的组合。
+<b>核心原理</b>：通过$e^{-i\frac{2 \pi}{N}kt}$的对称性将DFT递归分解成若干小的DFT的组合。
 原始的复杂度为\(O(N^2)\)的N输入N输出的DFT公式：
 
 \[ Y_N(k)=\sum_{t=0}^{N-1}  x(t) e^{-i\frac{2 \pi}{N}kt}\]
