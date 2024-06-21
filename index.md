@@ -9,6 +9,7 @@ title: jooooow
 
 # Articles
 
++ <a href="/archive/fmm_spherical.html">spherical harmonic in FMM</a>
 + <a href="/archive/fft.html">FFT</a>
 + <a href="/archive/groamcs_startup.html">gromacs startup</a>
 + <a href="/archive/cmake_tutorial.html">memo of CMake</a>
