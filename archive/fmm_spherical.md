@@ -1,5 +1,6 @@
 ---
 title: "关于FMM中的球谐函数的定义"
+layout: post
 ---
 
 <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" id="MathJax-script"></script>

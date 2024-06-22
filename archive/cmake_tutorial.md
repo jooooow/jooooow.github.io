@@ -1,5 +1,6 @@
 ---
 title: "CMake备忘录"
+layout: post
 ---
 
 参考自官方教程

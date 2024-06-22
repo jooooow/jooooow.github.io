@@ -1,5 +1,6 @@
 ---
 title: "GROMACS溶菌酶模拟"
+layout: post
 ---
 
 + 主要参考[官方推荐的第三方教程](http://www.mdtutorials.com/gmx/lysozyme/index.html)

@@ -1,5 +1,6 @@
 ---
 title: "关于gitignore的用法"
+layout: post
 ---
 
 # 简介
