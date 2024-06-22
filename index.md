@@ -11,6 +11,7 @@ title: jooooow
 # Blogs
 
 + 2024
+    + <a href="/archive/potato.html">Potechi Ranking</a>
     + <a href="/archive/coulomb_spectral.html">Coulomb Force by Sperctral Method</a>
 + 2023
     + <a href="/archive/groamcs_startup.html">Gromacs Startup</a>
