@@ -2,7 +2,6 @@ theme: minima
 title: jooooow's blog
 
 header_pages:
-  - index.md
   - about.md
 
 footer_text: "Copyright(c) 2022 jooooow. All rights reserved."
