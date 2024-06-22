@@ -13,6 +13,7 @@ MathJax = {
 </script>
 
 Ewald Summation法常被用来计算存在多个点电荷的电场，最终的结果可以直接看[公式16,17](#summary)。
+详细推导过程看[这里](../doc/ewald_derivation.pdf)。
 
 首先定义三维空间中一点的坐标$\vec{z}$为：
 

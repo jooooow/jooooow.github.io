@@ -12,7 +12,8 @@ MathJax = {
 };
 </script>
 
-[FMM论文](https://www.cambridge.org/core/journals/acta-numerica/article/abs/new-version-of-the-fast-multipole-method-for-the-laplace-equation-in-three-dimensions/8D84CC50463A63C73A5E97A045F16B79)中公式3.15使用的球谐函数定义与[通常](https://en.wikipedia.org/wiki/Spherical_harmonics#Conventions)不太一样，为此记录一下。  
+
+[FMM论文](https://www.cambridge.org/core/journals/acta-numerica/article/abs/new-version-of-the-fast-multipole-method-for-the-laplace-equation-in-three-dimensions/8D84CC50463A63C73A5E97A045F16B79)中公式3.15使用的球谐函数定义与[通常](https://en.wikipedia.org/wiki/Spherical_harmonics#Conventions)不太一样，为此记录一下。详细可以看[这里](../doc/fmm_spherical_harmonics.pdf)。
 通常的球谐函数定义：
 
 $$
