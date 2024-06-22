@@ -193,7 +193,7 @@ Particle Mesh Ewald(PME)和Ewald Summation的不同就是PME将电荷插值到�
 3. [https://zhuanlan.zhihu.com/p/406664860](https://zhuanlan.zhihu.com/p/406664860)
 
 <script src="https://utteranc.es/client.js"
-        repo="<username>/<repository>"
+        repo="jooooow/jooooow.github.io"
         issue-term="pathname"
         theme="github-light"
         crossorigin="anonymous"
