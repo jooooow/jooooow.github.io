@@ -20,6 +20,7 @@ title: jooooow
     + <a href="/archive/cmake_tutorial.html">Memo of CMake</a>
     + <a href="/archive/naspi.html">RaspberryPi NAS</a>
 + 2022
+    + <a href="/archive/parallel_stack.html">Parallel Stack</a>
     + <a href="/archive/about_gitignore.html">Usage of .gitignore</a>
 
 # Contact
