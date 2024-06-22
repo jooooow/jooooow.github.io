@@ -10,7 +10,7 @@ title: jooooow
 
 # Blogs
 
-+ <a href="/archive/coulomb_spectral.md">Coulomb Force by Sperctral Method</a>
++ <a href="/archive/coulomb_spectral.html">Coulomb Force by Sperctral Method</a>
 + <a href="/archive/groamcs_startup.html">Gromacs Startup</a>
 + <a href="/archive/ewald.html">Ewald</a>
 + <a href="/archive/fmm_spherical.html">Spherical Harmonic in FMM</a>
