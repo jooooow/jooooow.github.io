@@ -3,6 +3,15 @@ title: "树莓派使用OMV搭建NAS"
 layout: post
 ---
 
+<script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" id="MathJax-script"></script>
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'],['\$', '\$']]
+  }
+};
+</script>
+
 手头有闲置的pi，就想着用OpenMediaVault(OMV)搭个NAS试试看。
 
 ### 材料
