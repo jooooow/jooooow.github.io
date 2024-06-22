@@ -563,3 +563,11 @@ printf("test tree\n");
 get_directory_property( DirDefs COMPILE_DEFINITIONS)
 message( "COMPILE_DEFINITIONS = ${DirDefs}" )
 ```
+
+<script src="https://utteranc.es/client.js"
+        repo="jooooow/jooooow.github.io"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>

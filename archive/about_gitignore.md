@@ -73,3 +73,11 @@ git add .
 git commit -m 'bug fixed'
 git push
 ```
+
+<script src="https://utteranc.es/client.js"
+        repo="jooooow/jooooow.github.io"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>

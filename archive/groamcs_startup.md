@@ -328,3 +328,11 @@ gmx gyrate -s md_0_1.tpr -f md_0_1_noPBC.xtc -o gyrate.xvg #选择1.protein
 （4）可视化
 
 [PyMol可视化的模拟轨迹](http://www.jooooow.com/static/video/lysozyme.mpg)
+
+<script src="https://utteranc.es/client.js"
+        repo="jooooow/jooooow.github.io"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
