@@ -75,9 +75,8 @@ omv-extras中安装docker和portainer之后便可以用docker了。
 1.虽然有点不完美，单总归是实现了设备间的文件互通，用一段时间后考虑加块ssd做冗余备份。  
 2.按照东京电价，一年电费约在2000~2500之间：
 
-<p>
 \[ (0.6A+1.6A) \times 5V \times 24h \times 30d \times 12m \times 0.0001 \times 25(円)=2376(円) \]
-</p>
+
 
 3.得想办法搞个壳子。  
 

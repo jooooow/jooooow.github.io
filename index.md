@@ -8,15 +8,16 @@ title: jooooow
 
 @titech
 
-# Articles
+# Blogs
 
++ <a href="/archive/coulomb_spectral.md">Coulomb Force by Sperctral Method</a>
++ <a href="/archive/groamcs_startup.html">Gromacs Startup</a>
 + <a href="/archive/ewald.html">Ewald</a>
-+ <a href="/archive/fmm_spherical.html">spherical harmonic in FMM</a>
-+ <a href="/archive/groamcs_startup.html">gromacs startup</a>
++ <a href="/archive/fmm_spherical.html">Spherical Harmonic in FMM</a>
 + <a href="/archive/fft.html">FFT</a>
-+ <a href="/archive/cmake_tutorial.html">memo of CMake</a>
++ <a href="/archive/cmake_tutorial.html">Memo of CMake</a>
 + <a href="/archive/naspi.html">RaspberyPi NAS</a>
-+ <a href="/archive/about_gitignore.html">usage of .gitignore</a>
++ <a href="/archive/about_gitignore.html">Usage of .gitignore</a>
 
 # Contact
 
