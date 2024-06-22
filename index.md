@@ -16,7 +16,7 @@ title: jooooow
 + <a href="/archive/fmm_spherical.html">Spherical Harmonic in FMM</a>
 + <a href="/archive/fft.html">FFT</a>
 + <a href="/archive/cmake_tutorial.html">Memo of CMake</a>
-+ <a href="/archive/naspi.html">RaspberyPi NAS</a>
++ <a href="/archive/naspi.html">RaspberryPi NAS</a>
 + <a href="/archive/about_gitignore.html">Usage of .gitignore</a>
 
 # Contact
