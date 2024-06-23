@@ -601,7 +601,7 @@ TEST(HelloTest, little_than) {
     EXPECT_LT(1,2);
 }
 ```
-正常编译后build目录里会产生一个gtest目录，运行./gtest/test_hello后得到如下结果
+正常编译运行./test_hello后得到如下结果
 ```bash
 $ ./test_hello 
 Running main() from ../googletest/src/gtest_main.cc
