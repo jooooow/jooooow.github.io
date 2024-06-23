@@ -17,6 +17,7 @@ layout: post
 6. [更好的链接库的方法](#better-self-lib)     
 7. [安装](#install)     
 8. [传递宏](#macro)
+9. [GoogleTest](#gtest)
 
 <a name="basic"></a>
 ## 最基础的工程 
@@ -564,6 +565,67 @@ printf("test tree\n");
 get_directory_property( DirDefs COMPILE_DEFINITIONS)
 message( "COMPILE_DEFINITIONS = ${DirDefs}" )
 ```
+
+<a name="gtest"></a>
+## GoogleTest
+
+GoogleTest是常用的单元测试框架，详细可以参考[官方教程](https://google.github.io/googletest/primer.html)。
+
+cmake中添加gtest
+```cmake
+cmake_minimum_required(VERSION 3.10)
+project(hello)
+
+enable_testing()
+
+find_package(GTest REQUIRED)
+
+include(GoogleTest)
+
+add_executable(test_hello test_hello.cpp hello.cpp)
+target_link_libraries(test_hello GTest::GTest GTest::Main)
+
+gtest_discover_tests(test_hello)
+```
+
+test_hello.cpp如下
+```cpp
+#include "gtest/gtest.h"
+#include <iostream>
+
+TEST(HelloTest, equal) {
+    EXPECT_EQ(1,1.1) << "value not match";    
+}
+
+TEST(HelloTest, little_than) {
+    EXPECT_LT(1,2);
+}
+```
+正常编译后build目录里会产生一个gtest目录，运行./gtest/test_hello后得到如下结果
+```bash
+$ ./test_hello 
+Running main() from ../googletest/src/gtest_main.cc
+[==========] Running 2 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 2 tests from HelloTest
+[ RUN      ] HelloTest.equal
+/home/jiamian/gtest_test/test_hello.cpp:39: Failure
+Expected equality of these values:
+  1
+  1.1
+value not match
+[  FAILED  ] HelloTest.equal (0 ms)
+[ RUN      ] HelloTest.little_than
+[       OK ] HelloTest.little_than (0 ms)
+[----------] 2 tests from HelloTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 2 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] HelloTest.equal
+```
+可以发现第一个测试equal没有通过，第二个测试little_than通过了。
 
 <script src="https://utteranc.es/client.js"
         repo="jooooow/jooooow.github.io"
