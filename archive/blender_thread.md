@@ -22,14 +22,14 @@ MathJax = {
 
 ## Process
 
-0. Assuming A(bolt) connects to B(nut).
+0. Assuming $A$(bolt) connects to $B$(nut).
 1. Create a bolt using bolt factory.
-2. Cut/scale it to expected size as bolt1(make sure the thread angle larger than 45 degree to keep printable).
-3. Copy bolt1 to bolt2.
-4. Boolean bolt1 to A at expected position in union mode.
-5. Soldify bolt2 using $offset=1.0, thichkness=0.2cm$ to meet the print tolerance.
-6. Reverse bolt2 along the axial direction for a small angle(e.g. $5$ degree) to meet the print tolerance.
-7. Boolean bolt2 from B in difference mode.
+2. Cut/scale it to the expected size, as $bolt_1$(make sure the thread angle larger than $45^\circ$ to keep printable).
+3. Duplicate $bolt_1$ to $bolt_2$.
+4. Boolean $bolt_1$ to $A$ at expected position in union mode.
+5. Soldify $bolt_2$ using $offset=1.0, thichkness=0.2cm$ to meet the print tolerance.
+6. Optionally, reverse $bolt_2$ along the axial direction for a small angle(e.g. $5^\circ$) to meet the print tolerance.
+7. Boolean $bolt_2$ from $B$ in difference mode.
 8. Print.
 
 <script src="https://utteranc.es/client.js"
