@@ -24,7 +24,7 @@ MathJax = {
 
 0. Assuming $A$(bolt) connects to $B$(nut).
 1. Create a bolt using bolt factory.
-2. Cut/scale it to the expected size, as $bolt_1$(make sure the thread angle larger than $45^\circ$ to keep printable).
+2. Cut/scale it to the expected size, as $bolt_1$(make sure the thread angle larger than $90^\circ$ to keep printable).
 3. Duplicate $bolt_1$ to $bolt_2$.
 4. Boolean $bolt_1$ to $A$ at expected position in union mode.
 5. Soldify $bolt_2$ using $offset=1.0, thichkness=0.2cm$ to meet the print tolerance.
