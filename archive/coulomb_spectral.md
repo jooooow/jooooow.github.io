@@ -29,7 +29,7 @@ $$
 根据[卷积定理](https://en.wikipedia.org/wiki/Convolution_theorem)，时空间的卷积等效于谱空间的hadamard product，因此上式可以改写为：
 
 $$
-p[j][i]=\mathscr{F}^{-1}(\mathscr{F}(G[j][i]) * \mathscr{F}(q[j][i]))
+p[j][i]=\mathscr{F}^{-1}(\mathscr{F}(G[j][i]) \circ \mathscr{F}(q[j][i]))
 $$
 
 需要注意的是：
