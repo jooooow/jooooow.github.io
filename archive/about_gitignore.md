@@ -70,6 +70,7 @@ layout: post
 6. 一度被add后的对象再修改.gitignore后不会生效，需要删除cache重新add  
 
 ```bash
+git rm -r --cached .
 git add .
 git commit -m 'bug fixed'
 git push
