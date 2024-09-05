@@ -32,6 +32,25 @@ git mv file_from
 git add file_to
 ```
 
+## 3. Add tag
++ add tag to current commit
+
+```bash
+git tag -a tag_name -m tag_message
+```
+
++ add tag to history commit
+
+```bash
+git tag -a tag_name -m tag_message commit_hash
+```
+
++ push tag to remote
+
+```bash
+git push remote_name tag_name
+```
+
 
 
 
