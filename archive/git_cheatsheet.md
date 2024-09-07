@@ -7,7 +7,7 @@ layout: post
 This blog aims to memo some useful but not daily used commands.
 
 # Reference
-[progit](https://www.progit.cn/#_%E8%AE%B0%E5%BD%95%E6%AF%8F%E6%AC%A1%E6%9B%B4%E6%96%B0%E5%88%B0%E4%BB%93%E5%BA%93)
+[progit](https://www.progit.cn)
 
 # Commands
 
