@@ -3,22 +3,22 @@ title: "Git Cheatsheet"
 layout: post
 ---
 
-# Brief
+## Brief
 This blog aims to memo some useful but not daily used commands.
 
-# Reference
+## Reference
 [progit](https://www.progit.cn)
 
-# Commands
+## Commands
 
-## 1. Untract staged files
+### 1. Untract staged files
 ```bash
 git rm -r --cached .
 git add .
 ...
 ```
 
-## 2. Rename a file
+### 2. Rename a file
 
 ```bash
 git mv file_from file_to
@@ -32,7 +32,7 @@ git mv file_from
 git add file_to
 ```
 
-## 3. Add tag
+### 3. Add tag
 + add tag to current commit
 
 ```bash

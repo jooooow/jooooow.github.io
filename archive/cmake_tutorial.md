@@ -7,7 +7,7 @@ layout: post
 [https://cmake.org/cmake/help/latest/guide/tutorial/index.html](https://cmake.org/cmake/help/latest/guide/tutorial/index.html).   
 基于cmake 3.26.3
 
-# 目录
+## 目录
 
 1. [最基础的工程](#basic)    
 2. [指定c++版本](#version)     
