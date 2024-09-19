@@ -8,9 +8,26 @@ author:
 meta: "Springfield"
 ---
 
+# big heading (h1)
+
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit.
 
 ## Some great heading (h2)
+
+# Commands
+
+## 1. Untract staged files
+```bash
+git rm -r --cached .
+git add .
+...
+```
+
+## 2. Rename a file
+
+```bash
+git mv file_from file_to
+```
 
 Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu.
 
