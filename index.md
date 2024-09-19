@@ -11,6 +11,7 @@ title: jooooow
 # Blogs
 
 + 2024
+    + <a href="/archive/test.html">Git CheatSheet</a>
     + <a href="/archive/git_cheatsheet.html">Git CheatSheet</a>
     + <a href="/archive/nsight_compute.html">Usage&Examples of Nsight Compute</a>
     + <a href="/archive/blender_thread.html">Printable threads in Blender</a>
