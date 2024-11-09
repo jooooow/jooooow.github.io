@@ -1,6 +1,5 @@
 theme: minima
 title: ᔦꙬᔨ
-
 author:
   name: jooooow
 
@@ -9,8 +8,6 @@ header_pages:
 
 description: >
   "Copyright(c) 2022 jooooow. All rights reserved."
-
-description: \^o^/
 
 plugins:
   - jekyll-sitemap
