@@ -1,13 +1,12 @@
 theme: minima
 title: ᔦꙬᔨ
-author:
-  name: jooooow
+author: jooooow
 
 header_pages:
   - about.md
 
 description: >
-  "Copyright(c) 2022 jooooow. All rights reserved."
+  empty
 
 plugins:
   - jekyll-sitemap
