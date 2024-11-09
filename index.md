@@ -29,11 +29,10 @@ title: jooooow
     + <a href="/archive/about_gitignore.html">Usage of .gitignore</a>
 
 ## Links
-### GitHub
++ GitHub
+    - [jooooow](https://github.com/jooooow)
 
-+ [jooooow](https://github.com/jooooow)
-
-### Twitter
-+ [jooooow8](https://x.com/jooooow8)
-+ [jerksnapcrackle](https://x.com/jerksnapcrackle)
++ Twitter
+    - [jooooow8](https://x.com/jooooow8)
+    - [jerksnapcrackle](https://x.com/jerksnapcrackle)
     
