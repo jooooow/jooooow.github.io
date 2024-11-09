@@ -6,7 +6,7 @@ header_pages:
   - about.md
 
 description: >
-  empty
+  落書き禁止
 
 plugins:
   - jekyll-sitemap
