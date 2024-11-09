@@ -1,10 +1,14 @@
 theme: minima
-title: ↓
+title: ᔦꙬᔨ
+
+author:
+  name: jooooow
 
 header_pages:
   - about.md
 
-footer_text: "Copyright(c) 2022 jooooow. All rights reserved."
+description: >
+  "Copyright(c) 2022 jooooow. All rights reserved."
 
 description: \^o^/
 
