@@ -49,10 +49,12 @@ $$\begin{align}
 
 其中$G(\vec{z})$定义为
 
-$$
-G(\vec{z})=\frac{\alpha ^ 3}{\pi ^ {\frac{3}{2}}} e^{-\alpha^2 r^2} \tag{5}
-$$
+$$\begin{align}
+G(\vec{z})&=\frac{\alpha ^ 3}{\pi ^ {\frac{3}{2}}} e^{-\alpha^2 r^2}  \\
+\alpha &= \frac{1}{\sqrt{2} \sigma} \tag{5}
+\end{align}$$
 
+$\sigma$为正态分布的标准差，控制着收敛速度。  
 $\rho_j^s$对应的是短程作用（实空间快速衰减），$\rho_j^l$对应的是长程作用（倒空间快速衰减）。
 <br>
 接着来计算这两个假想的电荷密度所产生的电势，首先处理长程作用产生的电势。电荷密度和电势通过泊松方程相关联：
