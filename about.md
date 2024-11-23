@@ -3,4 +3,4 @@ layout: home
 title: about
 ---
 
-![image](img/general/kouji.jpeg)
+![image](img/general/kouji.png)
