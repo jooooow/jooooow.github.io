@@ -13,6 +13,7 @@ MathJax = {
 </script>
 
 ## Process
++ ref : [Youtube](https://www.youtube.com/watch?v=RkdblzqHemA)
 + プリント $\rightarrow$ ポリエステルパテ $\rightarrow$ 溶きパテ $\rightarrow$ サーフェーサー $\rightarrow$ 塗料 $\rightarrow$ トップコート
 
 ## Tools
