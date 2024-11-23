@@ -32,6 +32,9 @@ MathJax = {
 7. Boolean $bolt_2$ from $B$ in difference mode.
 8. Print.
 
+## Example
+![img](../img/blender_thread/printable_thread.gif)
+
 <script src="https://utteranc.es/client.js"
         repo="jooooow/jooooow.github.io"
         issue-term="pathname"
