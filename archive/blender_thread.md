@@ -27,7 +27,7 @@ MathJax = {
 2. Cut/scale it to the expected size, as $bolt_1$(make sure the thread angle larger than $90^\circ$ to keep printable).
 3. Duplicate $bolt_1$ to $bolt_2$.
 4. Boolean $bolt_1$ to $A$ at expected position in union mode.
-5. Soldify $bolt_2$ using $\text{offset}=1.0, \text{thichkness}=0.2\text{cm}$ to meet the print tolerance.
+5. Soldify $bolt_2$ using $\text{offset}=1.0$ and $\text{thichkness} \in0.1 \pm 0.05\text{ cm}$ to meet the print tolerance.
 6. Optionally, reverse $bolt_2$ along the axial direction for a small angle(e.g. $5^\circ$) to meet the print tolerance.
 7. Boolean $bolt_2$ from $B$ in difference mode.
 8. Print.
