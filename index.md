@@ -35,6 +35,4 @@ title: jooooow
 
 + X
     - [jooooow8](https://x.com/jooooow8)
-    - [jerksnapcrackle](https://x.com/jerksnapcrackle)
-    <!-- - [jerksnapcrackle](https://x.com/jerksnapcrackle) -->
     
